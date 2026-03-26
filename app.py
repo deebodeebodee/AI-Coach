@@ -238,6 +238,7 @@ st.subheader("2) Choose the value to reflect on")
 value = st.selectbox(
     allowed_values,
     index=allowed_values.index(default_focus),
+    label_visibility="collapsed",
 )
 
 st.info(
