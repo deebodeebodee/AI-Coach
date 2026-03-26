@@ -2,7 +2,7 @@ import os
 import requests
 import streamlit as st
 
-st.set_page_config(page_title="AI Reflection Coach", page_icon="🌱", layout="centered")
+st.set_page_config(page_title="AI Coach", layout="centered")
 
 openrouter_api_key = st.secrets.get("OPENROUTER_API_KEY", os.getenv("OPENROUTER_API_KEY"))
 
