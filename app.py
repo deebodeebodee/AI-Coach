@@ -224,7 +224,7 @@ default_focus = profile["focus"]
 
 st.caption("For prototyping purposes, scored profiles are simulated to demonstrate the report-to-coach handoff.")
 
-st.subheader("2) Selected report summary")
+st.subheader("Selected report summary")
 summary_cols = st.columns(3)
 summary_cols[0].metric("Trust", trust_score)
 summary_cols[1].metric("Curiosity", curiosity_score)
