@@ -236,7 +236,6 @@ allowed_values = ["Trust", "Curiosity", "Passion"]
 
 st.subheader("2) Choose the value to reflect on")
 value = st.selectbox(
-    "Choose the value to reflect on",
     allowed_values,
     index=allowed_values.index(default_focus),
 )
