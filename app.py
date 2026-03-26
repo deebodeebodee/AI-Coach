@@ -200,7 +200,7 @@ Rules:
         return fallback_feedback(chosen_value)
 
 
-st.title("🌱 AI Reflection Coach")
+st.title("AI Coach")
 st.caption("Prototype: post-report reflection coach for Trust, Curiosity, and Passion")
 
 st.markdown(
