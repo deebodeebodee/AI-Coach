@@ -224,7 +224,7 @@ default_focus = profile["focus"]
 
 st.caption("For prototyping purposes, scored profiles are simulated to demonstrate the report-to-coach handoff.")
 
-st.subheader("Selected report summary")
+st.markdown("### Selected report summary")
 summary_cols = st.columns(3)
 summary_cols[0].metric("Trust", trust_score)
 summary_cols[1].metric("Curiosity", curiosity_score)
@@ -233,8 +233,10 @@ summary_cols[2].metric("Passion", passion_score)
 st.info(profile["summary"])
 
 allowed_values = ["Trust", "Curiosity", "Passion"]
+
+st.subheader("2) Choose the value to reflect on")
 value = st.selectbox(
-    "2) Choose the value to reflect on",
+    "Choose the value to reflect on",
     allowed_values,
     index=allowed_values.index(default_focus),
 )
