@@ -43,7 +43,7 @@ def score_band(score):
     return "higher"
 
 
-def build_context_block(trust_score, curiosity_score, passion_score, chosen_value, profile_name):
+def build_context_block(trust_score, curiosity_score, passion_score, chosen_value):
     trust_band = score_band(trust_score)
     curiosity_band = score_band(curiosity_score)
     passion_band = score_band(passion_score)
@@ -116,13 +116,12 @@ You could use this reflection as an exploratory tool in a conversation with your
 """
 
 
-def get_ai_feedback(chosen_value, example_text, trust_score, curiosity_score, passion_score, profile_name):
+def get_ai_feedback(chosen_value, example_text, trust_score, curiosity_score, passion_score):
     context_block = build_context_block(
         trust_score,
         curiosity_score,
         passion_score,
         chosen_value,
-        profile_name,
     )
 
     prompt = f"""
