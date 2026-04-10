@@ -280,7 +280,6 @@ if st.button("Generate AI coaching feedback"):
                 trust_score,
                 curiosity_score,
                 passion_score,
-                leader_name,
             )
             st.markdown(feedback)
 
